@@ -1,0 +1,42 @@
+body{
+    background: rgb(70, 142, 236);
+    font: normal 15 pt Arial;
+    
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.406);
+        
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+/* esta parte centraliza a div da foto*/
+div{
+    text-align: center;
+    padding: 8px;
+}
+
+#foto img{
+    border-radius: 180px;
+    width: 200px;
+    height: 200px;
+    padding:20px;   
+}
+
+#msg{
+    text-align: center;
+}

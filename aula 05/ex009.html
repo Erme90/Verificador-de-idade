@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de nacionalidade</title>
+</head>
+<body>
+    <h1>Informe sua nacionalidade abaixo</h1>
+    <select id="paises">
+        <option value="" disabled selected>Escolha seu pais de origem</option>
+        <option value="Antigua e Barbuda">Antígua e Barbuda</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belize">Belize</option>
+        <option value="Brasil">Brasil</option>
+        <option value="Canada">Canadá</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Dominica">Dominica</option>
+        <option value="República Dominicana">República Dominicana</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Granada">Granada</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="México">México</option>
+        <option value="Nicarágua">Nicarágua</option>
+        <option value="Panamá">Panamá</option>
+        <option value="São Cristóvão e Névis">São Cristóvão e Névis</option>
+        <option value="Santa Lúcia">Santa Lúcia</option>
+        <option value="São Vicente e Granadinas">São Vicente e Granadinas</option>
+        <option value="Estados Unidos">Estados Unidos</option>
+      </select>
+     
+      
+      <br>
+      <button onclick="mostrar()">Qual sua nacionalidade</button>
+      <br>
+
+      <div>
+        <p id="paisselecionado"></p>
+        <p id="valorselecionado"></p>
+
+      </div>
+
+      <script>
+        
+        function mostrar(){
+            var pais = document.getElementById("paises")
+            
+            var valorselecionado = paises.value
+            document.getElementById("paisselecionado").innerHTML = `País selecionado: ${valorselecionado}`
+       
+            if (valorselecionado == "Brasil"){             
+              document.getElementById("valorselecionado").innerHTML = "É brasileiro!"
+            }else{
+              document.getElementById("valorselecionado").innerHTML = "É gringo!"
+            }            
+           
+        }
+      </script>
+      
+</body>
+</html>
